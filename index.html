@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochila de viagem</title>
+    <link rel="shortcut icon" type="image/jpg" href="assets/mochila.svg"/>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="titulo">Mochila de Viagem</h1>
+    <p class="subtitulo">&copy Desenvolvido por Caian Quirino</p>
+    <main class="conteudo">
+        <section class="caixa">
+            <div class="principal">
+                <div class="mochila"></div>
+                <form action="" class="adicionar" id="novoItem">
+                    <label for="item">Item</label>
+                    <input type="text" name="nome" id="nome" required maxlength="40">
+                    <label for="item">Quantidade</label>
+                    <input type="number" name="quantidade" id="quantidade" required>
+                    <input type="submit" value="Adicionar" class="cadastrar">
+                </form>
+            </div>
+            <ul class=sugestao__lista id="sugestaoLista">
+                <h2 class="sugestao__titulo">Itens Sugeridos</h2>
+                <li><span>Carregador de celular</span></li>
+                <li><span>Fones de ouvido</span></li>
+                <li><span>Adaptadores de tomada</span></li>
+                <li><span>Documentos de identificação</span></li>
+                <li><span>Escova de dente</span></li>
+                <li><span>Protetor solar</span></li>
+                <li><span>Pente de cabelo</span></li>
+                <li><span>Câmera fotográfica</span></li>
+                <li><span>Óculos</span></li>
+                <li><span>Remédios</span></li>
+            </ul>
+        </section>
+        <ul class="lista" id="lista">
+        </ul>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
